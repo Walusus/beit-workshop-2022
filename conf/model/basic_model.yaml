@@ -1,0 +1,6 @@
+# Default config for BasicModel
+_target_: project.models.basic_model.BasicModel
+hidden_size: 64
+learning_rate: 2e-4
+input_dims: [1, 28, 28]
+num_classes: 10

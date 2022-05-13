@@ -1,0 +1,5 @@
+# Default config for MNISTDataModule
+_target_: project.datamodules.mnist_datamodule.MNISTDataModule
+data_dir: '.'
+batch_size: ???
+num_workers: ???

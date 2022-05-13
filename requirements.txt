@@ -1,0 +1,7 @@
+seaborn
+pytorch-lightning
+torchmetrics
+torch
+rich
+lightning-bolts
+hydra-core

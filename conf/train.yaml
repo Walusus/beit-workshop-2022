@@ -1,0 +1,21 @@
+
+# wybor modelu i danych
+defaults:
+    - _self_
+    - model: ???
+    - datamodule: ???
+
+# konifguracja trainera
+trainer:
+    max_epochs: ???
+    gpus: ???
+    precision: 16
+    log_every_n_steps: 10
+    fast_dev_run: False
+
+# wybor callbackow
+callbacks:
+    - _target_: pytorch_lightning.callbacks.RichModelSummary
+    - _target_: pytorch_lightning.callbacks.RichProgressBar
+    - _target_: project.callbacks.log_generated_images_callback.LogGeneratedImagesCallback
+      n_images: 8

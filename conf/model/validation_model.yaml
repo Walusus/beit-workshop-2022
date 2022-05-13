@@ -1,0 +1,6 @@
+# Default config for ValidationModel
+_target_: project.models.validation_model.ValidationModel
+hidden_size: 64
+learning_rate: 2e-4
+input_dims: [1, 28, 28]
+num_classes: 10
